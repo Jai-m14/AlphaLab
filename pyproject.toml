@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alphalab"
+version = "0.0.1"
+description = "AlphaLab quant research engine"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "yfinance"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["alphalab*"]
